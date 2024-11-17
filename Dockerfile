@@ -45,6 +45,7 @@ RUN apt-get update && apt-get install -y \
     fd-find \
     unzip \
     gettext \
+    cpio \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
