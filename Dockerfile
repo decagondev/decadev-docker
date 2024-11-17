@@ -86,6 +86,8 @@ RUN git clone https://github.com/LazyVim/starter ~/.config/nvim && \
 
 RUN bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
 
+RUN wget -O ~/.gdbinit-gef.py -q https://gef.blah.cat/py
+
 RUN git clone https://github.com/pwndbg/pwndbg /opt/pwndbg && \
     cd /opt/pwndbg && \
     ./setup.sh
